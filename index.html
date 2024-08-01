@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <div class="container">
+        <select name="subject" id="subject">
+            <option value="">Subject</option>
+            <option value="Accountancy">Accountancy</option>
+            <option value="B.St.">B.St.</option>
+            <option value="Macro">Macro</option>
+            <option value="IED">IED</option>
+            <option value="English">English</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="PHE">PHE</option>
+            <option value="Painting">Painting</option>
+        </select>
+        <input type="text" id="task" placeholder="Enter a new task" />
+        <input type="datetime-local" id="deadline" />
+        <button onclick="addTask()" id="addTask">Add Task</button>
+    </div>
+    <ul id="taskList"></ul>
+    <script src="script.js"></script>
+</body>
+</html>

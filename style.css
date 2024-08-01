@@ -1,0 +1,72 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+h1{
+    margin-left: 30vh;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+.container{
+    padding-left: 35vh;
+    display: flex;
+    gap: 5vh;
+}
+#subject,#task,#deadline{
+    border-radius: 20px;
+    width: 17vh;
+    border: none;
+    font-size: 2.5vh;
+    background: none;
+    color: azure;
+}
+#task:focus{
+    outline:none;
+    border: 2px solid aqua;
+    
+}
+#addTask{
+    border-radius: 20px;
+    width: 17vh;
+    border: none;
+    font-size: larger;
+    background: rgb(110, 170, 233);
+    color: azure;
+    
+}
+#addTask:hover{
+    z-index: 1;
+    box-shadow: 4px 4px 4px white;
+   
+}
+#task{
+    width: 50vh;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+::placeholder{
+    opacity: 1;
+    color: rgb(255, 253, 253);
+    font-size: large;
+    text-align: center;
+}
+option{
+    background: rgb(126, 187, 214);
+    border: none;
+    
+}
+#taskList{
+    color: white;
+    font-size: 3vh;
+    padding-left: 60vh;
+}
+.complete-btn, .delete-btn{
+    cursor:pointer;
+}
+.completed{
+    text-decoration: line-through 4px black;
+}
+
